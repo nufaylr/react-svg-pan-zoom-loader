@@ -4,11 +4,11 @@ import {storiesOf} from '@storybook/react';
 import {withKnobs} from '@storybook/addon-knobs';
 
 import Welcome from './Welcome';
-import ViewerStory from './ViewerStory';
+import ReactSvgPanZoomLoaderStory from './ReactSvgPanZoomLoaderStory';
+import SvgLoaderSelectElementStory from './SvgLoaderSelectElementStory';
 
 storiesOf('React SVG Pan Zoom', module)
   .addDecorator(withKnobs)
   .add('README', () => <Welcome/>)
-  .add('Viewer', () => <ViewerStory/>)
-
-
+  .add('Viewer', () => <ReactSvgPanZoomLoaderStory/>)
+  .add('Proxy', () => <SvgLoaderSelectElementStory/>)
