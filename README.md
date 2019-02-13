@@ -39,9 +39,7 @@ import {ReactSvgPanZoomLoader, SvgLoaderSelectElement} from 'react-svg-pan-zoom-
 return (
     <ReactSvgPanZoomLoader src="image.svg" proxy = {
         <> 
-            <SvgLoaderSelectElement 
-            selector="#tree" 
-            onClick={onItemClick} 
+            <SvgLoaderSelectElement selector="#tree" onClick={onItemClick} 
             stroke={props.strokeColor}/> 
         </> 
     } render= {(content) => (
