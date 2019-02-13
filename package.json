@@ -31,7 +31,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-svg-pan-zoom": "^3.0.0",
-    "react-svgmt": "^1.1.6",
+    "react-svgmt": "^1.1.7",
     "remarkable": "^1.7.1"
   },
   "peerDependencies": {
