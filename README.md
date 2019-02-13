@@ -15,19 +15,17 @@ Example 1 :
 
 import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
 
-....
+...
 
-render() {
-    return (
-        <ReactSvgPanZoomLoader src="image.svg" render= {(content) => (
-            <ReactSVGPanZoom width={500} height={500}>
-                <svg width={500} height={500} >
-                    {content}
-                </svg>  
-            </ReactSVGPanZoom>
-        )}/>
-    )
-}
+return (
+    <ReactSvgPanZoomLoader src="image.svg" render= {(content) => (
+        <ReactSVGPanZoom width={500} height={500}>
+            <svg width={500} height={500} >
+                {content}
+            </svg>  
+        </ReactSVGPanZoom>
+    )}/>
+)
 ```
 
 Example 2 with proxy node prop type, under here we can target `<SvgLoaderSelectElement/>` component.
@@ -36,24 +34,24 @@ Example 2 with proxy node prop type, under here we can target `<SvgLoaderSelectE
 
 import {ReactSvgPanZoomLoader, SvgLoaderSelectElement} from 'react-svg-pan-zoom-loader'
 
-....
-render() {
-    return (
-        <ReactSvgPanZoomLoader src="image.svg" proxy = {
+...
 
-            <> 
-                <SvgLoaderSelectElement selector="#tree" onClick={onItemClick} stroke={props.strokeColor}/> 
-            </> 
-            
-            } render= {(content) => (
+return (
+    <ReactSvgPanZoomLoader src="image.svg" proxy = {
+        <> 
+            <SvgLoaderSelectElement 
+            selector="#tree" 
+            onClick={onItemClick} 
+            stroke={props.strokeColor}/> 
+        </> 
+    } render= {(content) => (
 
-            <ReactSVGPanZoom width={500} height={500}>
-                <svg width={500} height={500} >
-                    {content}
-                </svg>  
-            </ReactSVGPanZoom>
-            
-        )}/>
-    )
-}
+        <ReactSVGPanZoom width={500} height={500}>
+            <svg width={500} height={500} >
+                {content}
+            </svg>  
+        </ReactSVGPanZoom>
+
+    )}/>
+)
 ```
