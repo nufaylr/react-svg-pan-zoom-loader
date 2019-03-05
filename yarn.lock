@@ -6238,10 +6238,10 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
-react-svg-pan-zoom@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-svg-pan-zoom/-/react-svg-pan-zoom-3.0.0.tgz#0fdc1cd8b65653de2da931141b67d9d615af62f9"
-  integrity sha512-yf+JsIOkbrK1gTK7V7fMryYpRSL1nmidaAR5hNDWBfp3IS6T8B9+Zjnn4GKSoUb9sdk0C4KeDEvOENTCls58Zg==
+react-svg-pan-zoom@>=3.0.0:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-svg-pan-zoom/-/react-svg-pan-zoom-3.0.3.tgz#b12ec1d78a0b8fb81b6b8b6c4814c24493f80334"
+  integrity sha512-QCzq+OmpZYjlfFSpBBijysr0Q66vzTx9SZstfPxLMJ4Qneltd7m5FEETlcs5QHdtVhbpmBUjM6CnjlyI6d9k4A==
   dependencies:
     prop-types "^15.6.2"
     transformation-matrix "^1.12.0"
