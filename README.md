@@ -3,8 +3,15 @@
 This package allows us to load a SVG file remotely into [`react-svg-pan-zoom`](https://github.com/chrvadala/react-svg-pan-zoom)  component. 
 
 ## Installation
+
+### YARN
 ```sh
 yarn add react-svg-pan-zoom-loader
+```
+
+### NPM
+```sh
+npm install --save react-svg-pan-zoom-loader
 ```
 
 ## Usage
@@ -53,3 +60,7 @@ return (
     )}/>
 )
 ```
+
+## Contributors
+- [nufaylr](https://github.com/nufaylr) (author)
+- [chrvadala](https://github.com/chrvadala)
