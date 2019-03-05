@@ -4,7 +4,7 @@ This package allows us to load a SVG file remotely into [`react-svg-pan-zoom`](h
 
 ## Installation
 ```sh
-npm install react-svg-pan-zoom-loader
+yarn add react-svg-pan-zoom-loader
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
 ...
 
 return (
-    <ReactSvgPanZoomLoader src="image.svg" render= {(content) => (
+    <ReactSvgPanZoomLoader src="file/path/image.svg" render= {(content) => (
         <ReactSVGPanZoom width={500} height={500}>
             <svg width={500} height={500} >
                 {content}
@@ -28,7 +28,7 @@ return (
 )
 ```
 
-Example 2 with proxy node prop type, under here we can target `<SvgLoaderSelectElement/>` component.
+Example 2 with proxy node prop type, under here we can manipulate svg element attributes `<SvgLoaderSelectElement/>` component.
 
 ```js
 
@@ -37,7 +37,7 @@ import {ReactSvgPanZoomLoader, SvgLoaderSelectElement} from 'react-svg-pan-zoom-
 ...
 
 return (
-    <ReactSvgPanZoomLoader src="image.svg" proxy = {
+    <ReactSvgPanZoomLoader src="file/path/image.svg" proxy = {
         <> 
             <SvgLoaderSelectElement selector="#tree" onClick={onItemClick} 
             stroke={props.strokeColor}/> 
