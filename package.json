@@ -12,6 +12,11 @@
     "build": "npm-run-all clean build-commonjs build-es",
     "clean": "del build-*"
   },
+  "files": [
+    "*.md",
+    "build-*",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chrvadala/react-svg-pan-zoom-loader.git"
