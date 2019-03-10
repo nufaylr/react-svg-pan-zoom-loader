@@ -61,6 +61,9 @@ return (
 )
 ```
 
+## Live Demo
+[![Edit react-svg-pan-zoom-loader](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/o9840636p6?fontsize=14)
+
 ## Contributors
 - [nufaylr](https://github.com/nufaylr) (author)
 - [chrvadala](https://github.com/chrvadala)
