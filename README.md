@@ -16,7 +16,7 @@ npm install --save react-svg-pan-zoom-loader
 
 ## Usage
 
-Example 1 :
+Example 1a using `src` prop:
 
 ```js
 
@@ -35,7 +35,26 @@ return (
 )
 ```
 
-Example 2 with proxy node prop type, under here we can manipulate svg element attributes `<SvgLoaderSelectElement/>` component.
+Example 1b using `svgXML` prop:
+
+```js
+
+import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
+
+...
+
+return (
+    <ReactSvgPanZoomLoader svgXML={svgAsString} render= {(content) => (
+        <ReactSVGPanZoom width={500} height={500}>
+            <svg width={500} height={500} >
+                {content}
+            </svg>  
+        </ReactSVGPanZoom>
+    )}/>
+)
+```
+
+Example 2a using `src` prop with proxy node prop type, under here we can manipulate svg element attributes `<SvgLoaderSelectElement/>` component.
 
 ```js
 
@@ -45,6 +64,32 @@ import {ReactSvgPanZoomLoader, SvgLoaderSelectElement} from 'react-svg-pan-zoom-
 
 return (
     <ReactSvgPanZoomLoader src="file/path/image.svg" proxy = {
+        <> 
+            <SvgLoaderSelectElement selector="#tree" onClick={onItemClick} 
+            stroke={props.strokeColor}/> 
+        </> 
+    } render= {(content) => (
+
+        <ReactSVGPanZoom width={500} height={500}>
+            <svg width={500} height={500} >
+                {content}
+            </svg>  
+        </ReactSVGPanZoom>
+
+    )}/>
+)
+```
+
+Example 2b using `svgXML` prop with proxy node prop type, under here we can manipulate svg element attributes `<SvgLoaderSelectElement/>` component.
+
+```js
+
+import {ReactSvgPanZoomLoader, SvgLoaderSelectElement} from 'react-svg-pan-zoom-loader'
+
+...
+
+return (
+    <ReactSvgPanZoomLoader svgXML={svgAsString} proxy = {
         <> 
             <SvgLoaderSelectElement selector="#tree" onClick={onItemClick} 
             stroke={props.strokeColor}/> 
