@@ -11,7 +11,8 @@
     "build-es": "cross-env KEEP_MODULES=true babel src --out-dir build-es",
     "build": "npm-run-all clean build-commonjs build-es",
     "clean": "del build-*",
-    "build-storybook": "build-storybook -s ./stories/public"
+    "build-storybook": "build-storybook -s ./stories/public",
+    "prepare": "npm run build"
   },
   "files": [
     "*.md",
