@@ -1,5 +1,5 @@
-import React from 'react'
-import { SvgProxy } from 'react-svgmt'
+import React from "react";
+import { SvgProxy } from "react-svgmt";
 import { SvgLoaderSelectElementProps } from "./types";
 
 /**
@@ -10,4 +10,4 @@ const SvgLoaderSelectElement = (props: SvgLoaderSelectElementProps) => {
   return <SvgProxy selector={selector} {...other} />;
 };
 
-export {SvgLoaderSelectElement}
+export { SvgLoaderSelectElement };

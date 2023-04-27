@@ -8,13 +8,17 @@ export interface ReactSvgmtSvgLoaderProps {
 
 export interface ReactSvgmtSvgProxyProps {
   selector: string;
-  onElementSelected?: () => {};
+  onElementSelected?: () => SVGElement[] | SVGElement;
 }
 
-export interface ReactSvgPanZoomLoaderProps extends ReactSvgmtSvgLoaderProps {
+export interface ReactSvgPanZoomLoaderProps
+  extends Omit<ReactSvgmtSvgLoaderProps, "onSVGReady" | "children" | "path"> {
   render: (content: React.ReactNode) => React.ReactNode;
   proxy?: React.ReactNode;
   src: string;
 }
 
-export type SvgLoaderSelectElementProps = Pick<ReactSvgmtSvgProxyProps, 'selector'>
+export interface SvgLoaderSelectElementProps
+  extends Omit<ReactSvgmtSvgProxyProps, "onElementSelected"> {
+  onClick?: (event:React.MouseEvent) => any;
+}
