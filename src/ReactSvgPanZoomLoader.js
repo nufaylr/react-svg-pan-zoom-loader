@@ -12,7 +12,7 @@ const ReactSvgPanZoomLoader = (props) => {
     return (
         <div>
             {props.render(
-                <SvgLoader path={props.src}>
+                <SvgLoader path={props.src} svgXML={props.svgXML}>
                     {props.proxy}
                 </SvgLoader>
             )}
@@ -25,7 +25,8 @@ ReactSvgPanZoomLoader.defaultProps = {
 }
 
 ReactSvgPanZoomLoader.propTypes = {
-    src: PropTypes.string.isRequired,
+    src: PropTypes.string,
+    svgXML: PropTypes.string,
     render: PropTypes.func.isRequired,
     proxy: PropTypes.node
 }
