@@ -8,6 +8,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+	"noUncheckedIndexedAccess":true,
+	"noEmit": true
+
   },
   "exclude": ["stories"]
 }

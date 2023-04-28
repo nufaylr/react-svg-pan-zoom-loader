@@ -1,6 +1,6 @@
 {
   "name": "react-svg-pan-zoom-loader",
-  "version": "2.0.0",
+  "version": "next",
   "description": "This package allows us to load a SVG file remotely into react-svg-pan-zoom component.",
   "main": "./build-commonjs/index.js",
   "module": "./build-es/index.js",
@@ -17,11 +17,12 @@
     "build:commonjs": "tsc -b ./tsconfig.cjs.json",
     "build:es": "tsc -b ./tsconfig.esm.json",
     "build:type": "tsc -b ./tsconfig.types.json",
-    "build": "npm run clean && npm run build:commonjs && npm run build:es && npm run build:type",
+    "build": "npm run lint && npm run clean && npm run build:commonjs && npm run build:es && npm run build:type",
     "clean": "npx rimraf build-*",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+		"lint": "tsc"
   },
   "author": "nufaylr",
   "contributors": [
