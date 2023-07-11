@@ -25,7 +25,7 @@ import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
 ...
 
 return (
-    <ReactSvgPanZoomLoader src="file/path/image.svg" render= {(content) => (
+    <ReactSvgPanZoomLoader src="file/path/image.svg" className="my-container-class-name" render= {(content) => (
         <ReactSVGPanZoom width={500} height={500}>
             <svg width={500} height={500} >
                 {content}
