@@ -10,7 +10,7 @@ import { SvgLoader } from 'react-svgmt'
  */
 const ReactSvgPanZoomLoader = (props) => {
     return (
-        <div>
+        <div className={props.className}>
             {props.render(
                 <SvgLoader path={props.src} svgXML={props.svgXML}>
                     {props.proxy}
