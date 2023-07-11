@@ -1,6 +1,6 @@
 {
   "name": "react-svg-pan-zoom-loader",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "This package allows us to load a SVG file remotely into react-svg-pan-zoom component.",
   "main": "./build-commonjs/index.js",
   "module": "./build-es/index.js",
@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "react-svg-pan-zoom": "^3.1.0",
-    "react-svgmt": "^1.1.8"
+    "react-svgmt": "^2.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
